@@ -32,7 +32,7 @@ export default function Sidebar() {
 
       {/* ================= BOTTOM SECTION (PEER Logo) ================= */}
       <div className="p-4 border-t border-slate-200 dark:border-slate-700/50">
-        <div className="flex justify-center">
+        <div className="flex justify-center space-x-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50">
            
            {/* 1. Light Mode PEER Logo */}
            <img 
