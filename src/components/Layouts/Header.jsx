@@ -1,9 +1,9 @@
-import { Bell, Filter, Menu, Search, Settings, Sun } from 'lucide-react';
+import { Bell, ChevronDown, Filter, Menu, Search, Settings, Sun } from 'lucide-react';
 import React from 'react';
 
 export default function Header() {
   return (
-    <div className='bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/50 darker:border-slate-700/50 px-6 py-4'>
+    <div className='bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/50 darker:border-slate-700/50 px-6 py-6'>
         <div className="flex items-center justify-between">
             {/* Left Section */}
             <div className="flex items-center space-x-4">
@@ -51,13 +51,17 @@ export default function Header() {
               </button>
 
               {/* user profile */}
-              <div className="flex items-center space-x-3 pl-3 border-l border-slate-200 dark:border-slate-700">
-                <img src="https://via.placeholder.com/32" alt="User Profile" className="w-8 h-8 rounded-full ring-2 ring-blue-500" />
+              <div className="flex items-center space-x-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50">
+                <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=640&h=64&dpr=2" alt="User Profile" className="w-9 h-9 rounded-full ring-2 ring-blue-500" />
                 <div className="hidden md:block">
                   <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
                     John Doe
                   </p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Admin
+                  </p>
                 </div>
+                <ChevronDown className='w-4 h-4 text-slate-400' />
               </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar-theme flex flex-col h-full bg-white dark:bg-slate-900 transition-colors duration-300">
+    <div className="w-72 sidebar-theme flex flex-col h-full bg-white dark:bg-slate-900 transition-colors duration-300">
       
       {/* ================= TOP SECTION (Ministry Logo) ================= */}
       <div className="p-6 border-b border-slate-200 dark:border-slate-700/50">
