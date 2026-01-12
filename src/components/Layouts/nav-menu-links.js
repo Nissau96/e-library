@@ -6,52 +6,62 @@ import {
     HelpCircle 
 } from 'lucide-react';
 
-export const navMenuLinks = [
+export const navMenuGroups = [
     {
-        id: 'dashboard',
-        icon: LayoutDashboard,
-        label: 'Dashboard',
-        active: true,
-        submenu: [],
-        role: 'admin'
+        title: "Overview",
+        items: [
+            {
+                id: 'dashboard',
+                icon: LayoutDashboard,
+                label: 'Dashboard',
+                active: true,
+                role: 0
+            }
+        ]
     },
     {
-        id: 'document-library',
-        icon: Library,
-        label: 'Document Library',
-        active: false,
-        submenu: [],
-        role: 'user'
-    },
-    {
-        id: 'document-management',
-        icon: FolderCog,
-        label: 'Document Management',
-        active: false,
-        submenu: [
-            { id: 'upload', label: 'Upload' },
-            { id: 'approval', label: 'Approval' },
-            { id: 'recycle-bin', label: 'Recycle Bin' }
-        ],
-        role: 'admin'
-    },
-    {
-        id: 'settings',
-        icon: Settings,
-        label: 'Settings',
-        active: false,
-        submenu: [
-            { id: 'profile', label: 'Profile' },
-            { id: 'reset-password', label: 'Reset Password' }
-        ],
-        role: 'user'
-    },
-    {
-        id: 'help-support',
-        icon: HelpCircle,
-        label: 'Help & Support',
-        active: false,
-        submenu: [],
-        role: 'user'
+        title: "Workspace",
+        items: [
+            {
+                id: 'document-library',
+                icon: Library,
+                label: 'Document Library',
+                active: false,
+                submenu: [],
+                role: 0
+            },
+            {
+                id: 'file-manager',
+                icon: FolderCog,
+                label: 'File Manager',
+                active: false,
+                badge: '3', 
+                submenu: [
+                    { id: 'upload', label: 'Upload' },
+                    { id: 'approval', label: 'Workflow', badge: 'New' }, 
+                    { id: 'recycle-bin', label: 'Recycle Bin' }
+                ],
+                role: 0
+            },
+            {
+                id: 'settings',
+                icon: Settings,
+                label: 'Settings',
+                active: false,
+                submenu: [
+                    { id: 'profile', label: 'Profile' },
+                    { id: 'reset-password', label: 'Reset Password' }
+                ],
+                role: 0
+            },
+            {
+                id: 'help-support',
+                icon: HelpCircle,
+                label: 'Help & Support',
+                active: false,
+                submenu: [],
+                role: 0
+            }
+        ]
     }
 ];
